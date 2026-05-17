@@ -65,6 +65,24 @@ def run_verification():
     print(f'Result: {"✅ PASS" if passed else "❌ FAIL"}')
     print('──────────────────────────────────────')
 
+def forward_kinematics_n(thetas,lengths):
+    if len(thetas) != len(lengths):
+        raise ValueError("amount of thetas or lengthes are not equal")
+    x,y,angle = 0,0,0
+    cordinate_arr = [(0,0)]
+    for theta,length in zip(thetas,lengths):
+        theta = np.radians(theta)
+        angle = angle+theta 
+        x = x + length * np.cos(angle)
+        y = y + length * np.sin(angle)
+        cordinate_arr.append((x,y))
+
+    for i, (x, y) in enumerate(cordinate_arr):
+        print(f"Joint {i}: x={x:.4f}, y={y:.4f}")
+    return cordinate_arr
+
+forward_kinematics_n([45,30,60],[15,13,10])
+#print(forward_kinematics(45,30,15,13))
 plot_arm(45, 30, 15, 13)
 plot_workspace(15, 13)
 run_verification()
