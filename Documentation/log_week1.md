@@ -102,6 +102,42 @@ The block model architecture is now confirmed. Created `Documentation/cad_block_
 
 ---
 
+## Day 5
+
+### What did I do?
+Closed out Phase 0. No new code or CAD — this was a documentation and checkpoint day.
+
+Completed in SolidWorks:
+- Ran the rotation clearance check: Link 1 through −30° to +150° — PASSED, no collision with the base box.
+- Saved 4 screenshots to `Images/`: isometric, front, right side, top.
+- Declared Block Model v1 complete.
+
+Completed in Python:
+- Ran `animate_trajectory` and confirmed the GIF saves correctly to `Simulations/`.
+
+Documentation created:
+- `ik_simulation_notes.md` — IK derivation, roundtrip test, simulation functions explained.
+- `electronics_notes.md` — ESP32 + MG90S build, features, key lessons, DS3235 transition plan.
+- `week1_checkpoint.md` — clean Phase 0 summary: what was built, what was learned, what's next.
+- Updated `cad_block_model_notes.md` — Block Model v1 declared complete, Next Step updated.
+
+### What did I understand well?
+**When a phase is actually done.** A phase is done when every output is documented, every open question is captured, and the next step is written down. Not when the code runs — when the whole unit of work is closed.
+
+**The value of checkpoints.** Writing `week1_checkpoint.md` forced me to look at everything I built in one place. Seeing FK + IK + servo control + CAD block model listed together makes it clear that Phase 0 was not trivial — it's a real foundation.
+
+### What is still unclear?
+Nothing new — all open questions from previous days are already captured in the relevant notes files.
+
+### What is the next step?
+**Mini 2DOF Physical Arm** — Phase 1.
+
+IK computes the angles. Servo control executes the angles. The physical arm is the only missing link. Build it, connect it, give it a target point, and make it go there.
+
+Gate: hardware (two servos + printed/assembled arm structure).
+
+---
+
 ## Day 4
 
 ### What did I do?

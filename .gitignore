@@ -1,0 +1,33 @@
+# SolidWorks
+*.swp
+*.sldasm.lock
+*.sldrpt
+~$*
+__SWHistory/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# MATLAB
+*.asv
+*.m~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arduino / IDE
+*.elf
+*.bin
+*.hex
+build/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo

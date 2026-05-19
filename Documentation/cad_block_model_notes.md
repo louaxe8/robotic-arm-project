@@ -125,9 +125,20 @@ Everything below comes in the detailed design phase, not before:
 
 ---
 
-## Next Step
+## Block Model v1 — COMPLETE ✅
 
-1. Complete the rotation clearance check (see above)
-2. Save 4 screenshots into `Images/` (isometric, front, right side, clearance position)
-3. Declare Block Model v1 complete
-4. Begin detailed shoulder joint design — starting with the U-bracket cheeks once DS3235 physical dimensions are available
+**Declared complete: May 2026**
+
+All required steps finished:
+- ✅ Rotation clearance check passed (see above)
+- ✅ Screenshots saved to `Images/`: `block_model_v1_iso.png`, `block_model_v1_front.png`, `block_model_v1_side.png`, `block_model_v1_top.png`
+
+This block model is now archived. No further changes will be made to it.
+
+---
+
+## Next Step (Gated)
+
+Detailed shoulder joint design — starting with the U-bracket cheeks.
+
+**Gate:** Cannot start until the physical DS3235 servo is in hand and the shaft height is measured directly. All detailed CAD dimensions depend on this measurement.
